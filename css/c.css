@@ -1,0 +1,276 @@
+
+.pdd-start {
+    background: #22AB22;
+    padding: 20px 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    margin: 100px auto 0;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+}
+
+.pdd-start:hover {
+	background: #2FB52F;
+}
+
+.ct {
+	color:transparent;
+}
+
+[data-transparent="true"] {
+	color:transparent;
+}
+
+.JS-container {
+    margin: 50px auto 0;
+    width: 600px;
+    border: 2px solid #6CB5D4;
+    border-radius: 15px;
+    padding: 20px;
+    background: #E0F1EC;
+    position: relative;
+}
+
+.JS-next {
+    position: relative;
+}
+
+.JS-next[data-active="false"] {
+    position: absolute;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 20px;
+    background: #68CE6F;
+    right: 20px;
+    color: #198407;
+    top: 30px;
+    opacity: 0.5;
+}
+
+.JS-next[data-active="false"] .JS-next-message {
+    display: none;
+}
+
+.JS-next[data-active="true"] .JS-next-message {
+    display: block;
+    position: absolute;
+    font-size: 13px;
+    background:white;
+    padding: 5px;
+    border-radius: 5px;
+    top: -20px;
+    left: -135px;
+    border: 1px solid black;
+    color: black;
+}
+
+.JS-next[data-active="true"] .JS-next-message:after {
+    background: url(../img/dop.png) no-repeat top left;
+    width: 14px;
+    height: 31px;
+    display: block;
+    content:'';
+    position: absolute;
+    top: -1px;
+    right: -11px;
+}
+
+
+.JS-next[data-active="true"] {
+    position: absolute;
+    padding: 5px 15px;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 30px;
+    background: #48C15F;
+    right: 16px;
+    color: #14540A;
+    top: 24px;
+    cursor: pointer;
+}
+
+.JS-next[data-active="true"]:hover {
+    background: #55c16b;
+}
+
+.JS-time,.JS-number {
+    text-align: center;
+    font-size: 20px ;
+}
+
+.JS-container-signals {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0;
+}
+
+.JS-signals {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #359E97;
+    margin: 0 3px;
+}
+
+.JS-signals[data-err="false"] {
+    background: #62EC31;
+}
+
+.JS-signals[data-err="true"] {
+    background: #F31018;
+}
+
+.JS-image {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.JS-variants {
+    border: 1px solid #6CB5D4;
+    margin-top: 15px;
+}
+
+.JS-variant {
+    cursor: pointer;
+    font-size: 15px;
+    border-bottom: 1px solid #6CB5D4;
+    padding: 7px 7px 7px 26px;
+    background: url(../img/radio-default.png) 5px center no-repeat #3D9A94;
+    color: white;
+    font-size: 16px;
+}
+
+.JS-variant:hover,.JS-variant[data-checked="true"] {
+    background: url(../img/radio-check.png) 5px center no-repeat #77B3AF;
+}
+
+.JS-variant[data-checked="true"] {
+    cursor: default;
+}
+
+.JS-variant[data-checked="error"] {
+    background: url(../img/radio-check.png) 5px center no-repeat #F31018;
+    cursor:default;
+}
+
+.JS-variant[data-checked="blocked"] {
+    background: url(../img/radio-check.png) 5px center no-repeat #BCC7B4;
+    cursor:default;
+}
+
+.JS-variant:last-child {
+    border-bottom: 0;
+}
+.JS-question {
+    font-weight:bold;
+}
+
+.JS-comment {
+    background: #1BA6B7;
+    padding: 10px;
+}
+
+.JS-input-name {
+    margin: 0 auto;
+    display: block;
+    padding: 5px;
+    border: 1px solid #6CB5D4;
+    border-radius: 15px;
+}
+
+.JS-input-name-label {
+
+}
+
+.JS-start {
+    margin: 0 auto;
+    display: block;
+    padding: 5px;
+    outline: none;
+    width: 181px;
+    text-align: center;
+    color: white;
+    background-color: #6CB5D4;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.JS-start:hover {
+    background-color: #7fbdd4;
+}
+
+.start-container {
+    margin: 50px auto 0;
+    max-width: 600px;
+    border: 2px solid #6CB5D4;
+    border-radius: 15px;
+    padding: 20px;
+    background: #E0F1EC;
+    position: relative;
+    text-align: center;
+}
+
+.JS-input-name-label {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+.JS-input-name {
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+    border: 1px solid #6CB5D4;
+    border-radius: 5px;
+    outline: none;
+}
+
+.JS-message {
+    position: absolute;
+    z-index: 50;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+.message-default {
+    border:1px solid #ccc;
+    background: rgba(197, 179, 204, 0.12);
+    color: #ccc;
+}
+
+.message-error {
+    border: 1px solid #cc3c24;
+    background: #FDE0E0;
+    color: #cc3c24;
+}
+
+.message-succes {
+    border: 1px solid #28CC58;
+    background: #E3FDEB;
+    color: #28CC58;
+}
+
+.message-alert {
+    border: 1px solid #E6B509;
+    background: #FFF3CB;
+    color: #E6B509;
+}
+
+.JS-last-Message {
+    text-align: center;
+    font-size: 24px;
+}
